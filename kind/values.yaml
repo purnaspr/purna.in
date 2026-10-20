@@ -1,0 +1,37 @@
+replicaCount: 3
+
+image:
+  repository: portfolio
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: nodeport
+  port: 80
+  targetPort: 80
+
+resources:
+  limits:
+    cpu: 250m
+    memory: 256Mi
+  requests:
+    cpu: 128m
+    memory: 128Mi
+
+livenessProbe:
+  httpGet:
+    path: /
+    port: 80
+  initialDelaySeconds: 10
+  periodSeconds: 20
+  timeoutSeconds: 10
+  failureThreshold: 3
+
+readinessProbe:
+  httpGet:
+    path: /
+    port: 80
+  initialDelaySeconds: 9
+  periodSeconds: 5
+  timeoutSecond: 10
+  failureThreshold: 3

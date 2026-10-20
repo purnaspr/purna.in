@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Purnachandra Rao | DevOps Portfolio</title>
+    <meta name="description" content="Official Portfolio of S. Purnachandra Rao - DevOps & Cloud Engineer">
+    <meta name="keywords" content="AWS, DevOps, Docker, Jenkins, Terraform, Linux, Portfolio">
+
+    <!-- Open Graph / Social Share Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="S. Purnachandra Rao | DevOps & Cloud Engineer">
+    <meta property="og:description" content="Aspiring DevOps & Cloud Engineer skilled in AWS, Terraform, Ansible, Jenkins, Docker and CI/CD automation. Explore my projects, skills and certifications.">
+    <meta property="og:image" content="assets/images/profile3.png">
+    <meta property="og:url" content="https://purnachandrarao-portfolio.netlify.app/">
+    <meta property="og:site_name" content="S. Purnachandra Rao | DevOps Portfolio">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GSAP & D3.JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head>
+<body>
+
+    <!-- ==========================================================
+         SECTION: PRELOADER (100% LAG-FREE DEVOPS INFINITY)
+    ========================================================== -->
+    <div id="intro-preloader">
+        <div class="preloader-devops-bg"></div>
+        <div class="intro-content">
+            <div class="infinity-preloader-box">
+                <svg viewBox="0 0 400 200" class="devops-infinity-svg">
+                    <defs>
+                        <linearGradient id="neonCyanBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#00D2FF" />
+                            <stop offset="50%" stop-color="#38BDF8" />
+                            <stop offset="100%" stop-color="#0051FF" />
+                        </linearGradient>
+                    </defs>
+                    <path class="inf-outer-track" d="M 80,100 C 80,45 150,45 200,100 C 250,155 320,155 320,100 C 320,45 250,45 200,100 C 150,155 80,155 80,100 Z" />
+                    <path class="inf-glowing-beam" d="M 80,100 C 80,45 150,45 200,100 C 250,155 320,155 320,100 C 320,45 250,45 200,100 C 150,155 80,155 80,100 Z" />
+                    <text x="140" y="108" class="devops-text dev-text" text-anchor="middle">Dev</text>
+                    <text x="260" y="108" class="devops-text ops-text" text-anchor="middle">Ops</text>
+                </svg>
+            </div>
+            <h1 class="intro-welcome-text">Welcome to my portfolio</h1>
+            <p class="intro-welcome-sub">S. Purnachandra Rao • DevOps & Cloud Engineer</p>
+        </div>
+    </div>
+
+    <!-- BACKGROUND STARS CANVAS -->
+    <canvas id="starsCanvas"></canvas>
+
+    <!-- FLOATING DEVOPS TOOL ICONS -->
+    <div class="tech-icons-bg" id="techIconsBg" aria-hidden="true">
+        <i class="devicon-amazonwebservices-plain-wordmark colored ti-1"></i>
+        <i class="devicon-docker-plain colored ti-2"></i>
+        <i class="devicon-kubernetes-plain colored ti-3"></i>
+        <i class="devicon-terraform-plain colored ti-4"></i>
+        <i class="devicon-jenkins-plain colored ti-5"></i>
+        <i class="devicon-ansible-plain colored ti-6"></i>
+        <i class="devicon-git-plain colored ti-7"></i>
+        <i class="devicon-python-plain colored ti-8"></i>
+        <i class="devicon-linux-plain colored ti-9"></i>
+        <i class="devicon-github-original colored ti-10"></i>
+        <i class="devicon-docker-plain colored ti-11"></i>
+        <i class="devicon-amazonwebservices-plain-wordmark colored ti-12"></i>
+        <i class="devicon-terraform-plain colored ti-13"></i>
+        <i class="devicon-kubernetes-plain colored ti-14"></i>
+    </div>
+
+    <!-- SECTION: NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">SPR.</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-i-work">How I work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="assets/resume/Purna_Resume.pdf" target="_blank" class="resume-btn">Resume</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-top-layer">
+
+        <!-- LIVE SYSTEM STATUS WIDGET -->
+        <div class="system-status-bar">
+            <div class="container status-container">
+                <div class="status-item">
+                    <span class="status-dot green"></span>
+                    <span>AWS Infrastructure: <strong>Active</strong></span>
+                </div>
+                <div class="status-item">
+                    <span class="status-dot green"></span>
+                    <span>CI/CD Pipelines: <strong>Operational</strong></span>
+                </div>
+                <div class="status-item">
+                    <span class="status-dot blue"></span>
+                    <span>Status: <strong>Available for Hiring</strong></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION: HERO (LEFT INFO & RIGHT 3D ID CARD) -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-code"></i>
+                        <span>BUILD • AUTOMATE • DEPLOY</span>
+                    </div>
+                    <h1>S. <span class="stylized-name">Purnachandra Rao</span></h1>          
+                    <h2><span id="typing-text"></span><span class="typing-cursor">|</span></h2>
+                    <p>I build scalable cloud infrastructure, automate deployments, and create reliable CI/CD pipelines using modern DevOps technologies.</p>
+                    
+                    <div class="hero-tags">
+                        <span><i class="devicon-amazonwebservices-plain-wordmark colored"></i></span>
+                        <span><i class="devicon-linux-plain colored"></i></span>
+                        <span><i class="devicon-docker-plain colored"></i></span>
+                        <span><i class="devicon-kubernetes-plain colored"></i></span>
+                        <span><i class="devicon-jenkins-plain colored"></i></span>
+                        <span><i class="devicon-terraform-plain colored"></i></span>
+                        <span><i class="devicon-ansible-plain colored"></i></span>
+                        <span><i class="devicon-maven-plain colored"></i></span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="primary-btn">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                        <button id="play-intro-btn" class="secondary-btn">
+                            <i class="fa-solid fa-circle-play"></i> Watch Introduction
+                        </button>
+                        <audio id="intro-audio" src="assets/audio/audio(main).mp3"></audio>
+                    </div>
+
+                    <div class="hero-social">
+                        <a href="https://github.com/Purna303703" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/s-purnachandra-rao-devops-engineer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:chandraraop698@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE: RECTANGULAR CLEAR PORTRAIT ID CARD -->
+                <div class="hero-right">
+                    <div class="badge-stage" id="badgeStage">
+                        <div class="badge-lanyard">
+                            <div class="strap-loop"></div>
+                            <div class="metal-clip"></div>
+                            <div class="plastic-holder"></div>
+                        </div>
+
+                        <div class="id-card-3d" id="idCard3D">
+                            <div class="card-slot-hole"></div>
+                            <div class="card-glare" id="cardGlare"></div>
+
+                            <div class="id-card-content">
+                                <!-- RECTANGLE PROMINENT PHOTO -->
+                                <div class="id-avatar-wrap">
+                                    <img src="assets/images/profile3.png" alt="S. Purnachandra Rao" class="id-avatar-img">
+                                    <span class="id-live-pulse" title="Available for Hiring"></span>
+                                </div>
+
+                                <h3 class="id-name">S. Purnachandra Rao</h3>
+                                <p class="id-role">DevOps & Cloud Engineer</p>
+
+                                <div class="id-details-grid">
+                                    <div class="id-detail-item">
+                                        <span class="id-label">SPECIALITY</span>
+                                        <strong class="id-val">AWS & CI/CD</strong>
+                                    </div>
+                                    <div class="id-detail-item">
+                                        <span class="id-label">LOCATION</span>
+                                        <strong class="id-val"><i class="fa-solid fa-location-dot"></i> India</strong>
+                                    </div>
+                                    <div class="id-detail-item">
+                                        <span class="id-label">EXPERIENCE</span>
+                                        <strong class="id-val">Fresher / Projects</strong>
+                                    </div>
+                                    <div class="id-detail-item">
+                                        <span class="id-label">STATUS</span>
+                                        <strong class="id-val text-green">Available</strong>
+                                    </div>
+                                </div>
+
+                                <div class="id-footer-barcode">
+                                    <div class="fake-barcode">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <span class="barcode-serial">SPR-DEVOPS-2026-CLOUD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="badge-hint"><i class="fa-solid fa-hand-pointer"></i> Drag or hover card to tilt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: ABOUT -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ABOUT ME</span>
+                    <h2 class="section-title">Passionate About Building Reliable Cloud Infrastructure</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-left">
+                        <div class="about-card">
+                            <h3>Hello, I'm Purnachandra Rao 👋</h3>
+                            <p>I recently completed my Bachelor's degree in Computer Science and I am an aspiring DevOps & Cloud Engineer passionate about cloud computing, automation, Infrastructure as Code, Linux administration and CI/CD.</p>
+                            <p>My primary goal is to build scalable, secure and automated deployment pipelines using modern DevOps tools and cloud technologies.</p>
+                            <p>I enjoy learning new technologies, solving infrastructure challenges, and continuously improving deployment workflows through automation.</p>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="info-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Dachepalle, Palnadu District, Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Sc Computer Science</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <div>
+                                <h4>Experience</h4>
+                                <p>Fresher</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fa-solid fa-code"></i>
+                            <div>
+                                <h4>Career Goal</h4>
+                                <p>DevOps Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: STATS -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h2>15+</h2>
+                        <p>DevOps Tools</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>6+</h2>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>3+</h2>
+                        <p>Project Videos</p>
+                    </div>
+                    <div class="stat-card">
+                        <h2>6+</h2>
+                        <p>Professional Certifications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: HOW I WORK -->
+        <section id="how-i-work" class="why-hire">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">MY APPROACH</span>
+                    <h2 class="section-title">How I Work & Learn</h2>
+                </div>
+            </div>
+
+            <div class="stack-container">
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">01</div>
+                        <div class="stack-text">
+                            <h3>I Learn by Building</h3>
+                            <p>I learn DevOps by actually building things, not just watching tutorials. I’ve worked on projects using AWS, Docker, Kubernetes, Jenkins, Terraform, Ansible, Maven, and Tomcat. Along the way, I’ve faced failed builds, configuration issues, and deployment problems — and learned by fixing them.</p>
+                        </div>
+                        <i class="fa-solid fa-server stack-visual"></i>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">02</div>
+                        <div class="stack-text">
+                            <h3>Always Learning, Always Practicing</h3>
+                            <p>Most of what I know about DevOps has come from self-learning and hands-on practice. I started with Linux and Git, then moved into Docker, AWS, Jenkins, Terraform, Ansible, and Kubernetes. I’m still learning, but I make sure I practice what I learn by using it in projects.</p>
+                        </div>
+                        <i class="fa-solid fa-bolt stack-visual"></i>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">03</div>
+                        <div class="stack-text">
+                            <h3>I Prefer Automation Over Repetition</h3>
+                            <p>Whenever I find myself doing the same task again and again, I look for a way to automate it. I’ve used Terraform for infrastructure, Ansible for configuration, and Jenkins for CI/CD. As I continue learning, I want to take this further with GitOps and more automated cloud-native workflows.</p>
+                        </div>
+                        <i class="fa-solid fa-gears stack-visual"></i>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">04</div>
+                        <div class="stack-text">
+                            <h3>I Don’t Stop at the Error</h3>
+                            <p>When something breaks, I try to understand why instead of simply starting over. During my projects, I’ve dealt with failed builds, Docker issues, server configuration problems, and deployment errors. Troubleshooting these problems has taught me to be more patient, systematic, and comfortable with debugging.</p>
+                        </div>
+                        <i class="fa-solid fa-bug stack-visual"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: SKILLS -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">SKILLS</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><h3>AWS</h3></div>
+                    <div class="skill-card"><i class="devicon-docker-plain colored"></i><h3>Docker</h3></div>
+                    <div class="skill-card"><i class="devicon-kubernetes-plain colored"></i><h3>Kubernetes</h3></div>
+                    <div class="skill-card"><i class="devicon-terraform-plain colored"></i><h3>Terraform</h3></div>
+                    <div class="skill-card"><i class="devicon-jenkins-plain colored"></i><h3>Jenkins</h3></div>
+                    <div class="skill-card"><i class="devicon-ansible-plain colored"></i><h3>Ansible</h3></div>
+                    <div class="skill-card"><i class="devicon-github-original colored"></i><h3>GitHub</h3></div>
+                    <div class="skill-card"><i class="devicon-git-plain colored"></i><h3>Git</h3></div>
+                    <div class="skill-card"><i class="devicon-python-plain colored"></i><h3>Python</h3></div>
+                    <div class="skill-card"><i class="devicon-linux-plain colored"></i><h3>Linux</h3></div>
+                    <div class="skill-card"><i class="devicon-maven-plain colored"></i><h3>Maven</h3></div>
+                    <div class="skill-card"><i class="devicon-nginx-plain colored"></i><h3>nginx</h3></div>
+                    <div class="skill-card"><i class="devicon-sonarqube-plain colored"></i><h3>SonarQube</h3></div>
+                    <div class="skill-card"><i class="fa-solid fa-box-open" style="color: #43b02a; font-size: 4rem; margin-bottom: 22px;"></i><h3>JFrog</h3></div>
+                    <div class="skill-card"><i class="devicon-tomcat-line colored"></i><h3>Tomcat</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CURRENTLY LEARNING -->
+        <section class="learning">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">CURRENTLY LEARNING</span>
+                    <h2 class="section-title">Continuous Learning Journey</h2>
+                </div>
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>DevSecOps</h3>
+                        <p>Integrating security into modern CI/CD pipelines.</p>
+                    </div>
+                    <div class="learning-card">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>AIOps & Intelligent Observability</h3>
+                        <p>Exploring AI-driven monitoring, log analytics, dynamic alerting, and automated incident response.</p>
+                    </div>
+                    <div class="learning-card">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <h3>GitOps (ArgoCD)</h3>
+                        <p>Modern Kubernetes continuous delivery and declarative infrastructure management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: GITHUB LIVE STATS -->
+        <section id="github-stats" class="github-stats">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">OPEN SOURCE</span>
+                    <h2 class="section-title">GitHub Activity & Metrics</h2>
+                </div>
+                <div class="github-stats-grid">
+                    <div class="github-custom-card">
+                        <div class="github-card-header">
+                            <i class="fa-brands fa-github"></i>
+                            <h3>GitHub Overview</h3>
+                        </div>
+                        <div class="github-metrics-list">
+                            <div class="metric-item">
+                                <span>Username:</span>
+                                <strong>Purna303703</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span>Public Repositories:</span>
+                                <strong id="github-repo-count">Loading...</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span>Primary Focus:</span>
+                                <strong>DevOps & IaC</strong>
+                            </div>
+                            <div class="metric-item">
+                                <span>Contributions:</span>
+                                <strong class="green-text">Active Contributor</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="github-custom-card">
+                        <div class="github-card-header">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Most Used Tech Stack</h3>
+                        </div>
+                        <div class="lang-bars">
+                            <div class="lang-item">
+                                <div class="lang-label"><span>HCL (Terraform) / YAML (Ansible)</span><span>40%</span></div>
+                                <div class="progress-bar"><div class="fill" style="width: 60%; background: #0284C7;"></div></div>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-label"><span>Dockerfile / Shell Scripting</span><span>30%</span></div>
+                                <div class="progress-bar"><div class="fill" style="width: 30%; background: #0EA5E9;"></div></div>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-label"><span>Python / Java</span><span>20%</span></div>
+                                <div class="progress-bar"><div class="fill" style="width: 20%; background: #16A34A;"></div></div>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-label"><span>HTML / CSS</span><span>10%</span></div>
+                                <div class="progress-bar"><div class="fill" style="width: 10%; background: #F59E0B;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: PROJECTS -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">PROJECTS</span>
+                    <h2 class="section-title">Internship & Personal Projects</h2>
+                </div>
+            </div>
+
+            <div class="stack-container">
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">1</div>
+                        <div class="stack-text">
+                            <h3>Zero-Downtime Deployment CI/CD Pipeline</h3>
+                            <p>Designed and automated an end-to-end continuous deployment (CI/CD) workflow ensuring zero-downtime application updates. Implemented seamless traffic switching and automated rollback mechanisms, allowing production releases without service disruption or manual intervention.</p>
+                            <div class="project-tech">
+                                <span>AWS</span><span>SonarQube</span><span>docker</span><span>Jenkins</span><span>Maven</span><span>kubernetes</span>
+                            </div>
+                            <a href="https://github.com/Purna303703/project-1A-zero-downtime.git" target="_blank" class="github-acc-btn">
+                                <i class="fa-brands fa-github"></i> View Repository
+                            </a>
+                        </div>
+                        <i class="fa-solid fa-server stack-visual"></i>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">2</div>
+                        <div class="stack-text">
+                            <h3>End-to-End DevOps CI/CD Pipeline</h3>
+                            <p>Provisioned AWS infrastructure using Terraform, configured Jenkins & Apache Tomcat with Ansible, integrated GitHub, automated Maven builds, and deployed applications.</p>
+                            <div class="project-tech">
+                                <span>AWS</span><span>Terraform</span><span>Ansible</span><span>Jenkins</span><span>Maven</span><span>Tomcat</span>
+                            </div>
+                            <a href="https://github.com/Purna303703/automation-CI-CD-project.git" target="_blank" class="github-acc-btn">
+                                <i class="fa-brands fa-github"></i> View Repository
+                            </a>
+                        </div>
+                        <i class="fa-solid fa-server stack-visual"></i>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">3</div>
+                        <div class="stack-text">
+                            <h3>Java Web Application CI/CD Deployment</h3>
+                            <p>Built and deployed a Java web application using AWS EC2, Docker, Jenkins, Maven and Apache Tomcat with an automated deployment pipeline.</p>
+                            <div class="project-tech">
+                                <span>AWS</span><span>Docker</span><span>Jenkins</span><span>Maven</span><span>Tomcat</span>
+                            </div>
+                            <a href="https://github.com/Purna303703/jenkins-CI-CD.git" target="_blank" class="github-acc-btn">
+                                <i class="fa-brands fa-aws stack-visual"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">4</div>
+                        <div class="stack-text">
+                            <h3>Mining Machine Learning Project</h3>
+                            <p>Developed a Machine Learning solution for mining datasets using Python, data preprocessing, feature engineering, model training, and evaluation.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>Machine Learning</span><span>Pandas</span><span>NumPy</span>
+                            </div>
+                            <a href="https://github.com/Purna303703/mining_project-ml.git" target="_blank" class="github-acc-btn">
+                                <i class="fa-brands fa-github"></i> View Repository
+                            </a>
+                        </div>
+                        <i class="fa-solid fa-brain stack-visual"></i>
+                    </div>
+                </div>
+
+                <div class="stack-card">
+                    <div class="stack-card-inner">
+                        <div class="stack-badge">5</div>
+                        <div class="stack-text">
+                            <h3>Agriculture Crop Production Analysis</h3>
+                            <p>Performed exploratory data analysis, visualization, and agricultural production trends insights generation using Python from real-world datasets.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>EDA</span>
+                            </div>
+                            <a href="https://github.com/Purna303703/Prediction-of-Agriculture-Crop-Production-in-India.git" target="_blank" class="github-acc-btn">
+                                <i class="fa-brands fa-github"></i> View Repository
+                            </a>
+                        </div>
+                        <i class="fa-solid fa-seedling stack-visual"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: FUTURE PROJECTS ROADMAP -->
+        <section id="future-projects" class="future-projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">PROJECT ROADMAP</span>
+                    <h2 class="section-title">Upcoming Future Projects</h2>
+                </div>
+                <div class="future-grid">
+                    <div class="future-card">
+                        <div class="future-badge">Upcoming</div>
+                        <div class="future-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h3>Cloud Native DevOps Pipeline</h3>
+                        <p>Building an automated cloud-native CI/CD workflow leveraging Kubernetes orchestration with AWS, Terraform, Docker, and Jenkins.</p>
+                        <div class="project-tech">
+                            <span>AWS</span><span>Terraform</span><span>Jenkins</span><span>Docker</span><span>Kubernetes</span>
+                        </div>
+                    </div>
+
+                    <div class="future-card">
+                        <div class="future-badge">Planned</div>
+                        <div class="future-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>DevSecOps Security Automation</h3>
+                        <p>Integrating security scanning tools into CI/CD pipelines for automated vulnerability management, container scanning, and compliance.</p>
+                        <div class="project-tech">
+                            <span>DevSecOps</span><span>Trivy</span><span>SonarQube</span><span>OWASP</span><span>Docker</span>
+                        </div>
+                    </div>
+
+                    <div class="future-card">
+                        <div class="future-badge">Research</div>
+                        <div class="future-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>AIOps & Intelligent Observability</h3>
+                        <p>Exploring AI-driven monitoring, intelligent log analysis, dynamic alerting, and automated incident response in cloud environments.</p>
+                        <div class="project-tech">
+                            <span>AIOps</span><span>Prometheus</span><span>Grafana</span><span>Python</span><span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: VIDEOS & DEMONSTRATIONS (COLLAPSIBLE RECTANGLE CARDS) -->
+        <section id="videos" class="videos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">PROJECT VIDEOS</span>
+                    <h2 class="section-title">Project Demonstrations</h2>
+                    <p class="section-desc">Click on any project to expand its architecture, live execution proofs, and video demonstrations.</p>
+                </div>
+
+                <div class="accordion-projects-container">
+
+                    <!-- PROJECT ITEM 1: ZERO-DOWNTIME CI/CD (DEFAULT OPEN) -->
+                    <div class="project-accordion-item active" id="proj-item-1">
+                        <!-- COMPACT RECTANGLE HEADER (VISIBLE ALWAYS) -->
+                        <div class="accordion-header" onclick="toggleProjectAccordion('proj-item-1')">
+                            <div class="acc-header-left">
+                                <span class="acc-badge"><i class="fa-solid fa-camera-retro"></i> Live Execution</span>
+                                <h3 class="acc-title">Zero-Downtime CI/CD Pipeline (K8s & AWS)</h3>
+                            </div>
+                            <div class="acc-header-right">
+                                <div class="acc-tech-mini">
+                                    <span>AWS EC2</span>
+                                    <span>Jenkins</span>
+                                    <span>Docker</span>
+                                    <span>K8s</span>
+                                </div>
+                                <span class="acc-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- EXPANDABLE CONTENT (SLIDER & PROOFS) -->
+                        <div class="accordion-content">
+                            <div class="video-card demo-gallery-card">
+                                <div class="video-frame gallery-slider-frame">
+                                    <div class="demo-slider-wrapper">
+                                        <div class="demo-slider-header">
+                                            <span><i class="fa-solid fa-terminal"></i> Step Execution Proofs</span>
+                                            <span class="gallery-counter" id="galleryCounter">1 / 28</span>
+                                        </div>
+                                        <div class="demo-slides-track" id="projectTrack"></div>
+                                        <div class="demo-slider-nav">
+                                            <button type="button" class="demo-nav-btn" id="projPrevBtn"><i class="fa-solid fa-arrow-left"></i> Prev</button>
+                                            <button type="button" class="demo-expand-btn" onclick="openProjectModal()"><i class="fa-solid fa-expand"></i> Full Screen</button>
+                                            <button type="button" class="demo-nav-btn" id="projNextBtn">Next <i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="video-content">
+                                    <div class="demo-badge"><i class="fa-solid fa-camera-retro"></i> Live Pipeline Execution</div>
+                                    <h3>Zero-Downtime CI/CD Pipeline (K8s & AWS)</h3>
+                                    <p>Complete step-by-step visual demonstration of building, testing, containerizing, and zero-downtime deployment:</p>
+                                    <ul class="demo-highlights-list">
+                                        <li><strong>CI in AWS EC2:</strong> Jenkins Docker pipeline, Maven build, and SonarQube quality gate passing.</li>
+                                        <li><strong>Docker Hub:</strong> Secure multi-stage image push to registry.</li>
+                                        <li><strong>CD in Local KinD:</strong> Multi-node Kubernetes rolling update deployment and NodePort verification with Actuator health checks.</li>
+                                        <p><strong>I built an end-to-end Zero-Downtime CI/CD Pipeline using AWS EC2, Jenkins, Docker, SonarQube, Maven, and Kubernetes (KinD). The main objective was to completely automate the journey from a developer pushing code to production rollout, ensuring zero service disruption for end users through a rolling deployment strategy.</strong></p>
+                                    </ul>
+                                    <div class="demo-actions">
+                                        <a href="https://github.com/Purna303703/project-1A-zero-downtime.git" target="_blank" class="github-acc-btn">
+                                            <i class="fa-brands fa-github"></i> View Repo
+                                        </a>
+                                        <button type="button" class="primary-btn demo-btn" onclick="openProjectModal()">
+                                            View All 28 Steps
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT ITEM 2: END-TO-END DEVOPS PROJECT -->
+                    <div class="project-accordion-item" id="proj-item-2">
+                        <!-- COMPACT RECTANGLE HEADER -->
+                        <div class="accordion-header" onclick="toggleProjectAccordion('proj-item-2')">
+                            <div class="acc-header-left">
+                                <span class="acc-badge"><i class="fa-brands fa-youtube"></i> Video Demo</span>
+                                <h3 class="acc-title">End-to-End DevOps CI/CD Pipeline</h3>
+                            </div>
+                            <div class="acc-header-right">
+                                <div class="acc-tech-mini">
+                                    <span>Terraform</span>
+                                    <span>Ansible</span>
+                                    <span>Tomcat</span>
+                                </div>
+                                <span class="acc-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- EXPANDABLE CONTENT -->
+                        <div class="accordion-content">
+                            <div class="video-card">
+                                <div class="video-frame">
+                                    <iframe src="https://www.youtube.com/embed/198FdC0zh14" title="End-to-End DevOps Project" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-content">
+                                    <h3>End-to-End DevOps CI/CD Pipeline</h3>
+                                    <p>Complete Infrastructure as Code, Configuration Management, Build Automation, and Continuous Deployment implementation using AWS, Terraform, Ansible, Jenkins, Maven, and Apache Tomcat.</p>
+                                    <div class="demo-actions" style="margin-top: 20px;">
+                                        <a href="https://github.com/Purna303703/automation-CI-CD-project.git" target="_blank" class="github-acc-btn">
+                                            <i class="fa-brands fa-github"></i> View Repo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT ITEM 3: JAVA WEB APP DEPLOYMENT -->
+                    <div class="project-accordion-item" id="proj-item-3">
+                        <!-- COMPACT RECTANGLE HEADER -->
+                        <div class="accordion-header" onclick="toggleProjectAccordion('proj-item-3')">
+                            <div class="acc-header-left">
+                                <span class="acc-badge"><i class="fa-brands fa-youtube"></i> Video Demo</span>
+                                <h3 class="acc-title">Java Web Application Deployment on AWS</h3>
+                            </div>
+                            <div class="acc-header-right">
+                                <div class="acc-tech-mini">
+                                    <span>Docker</span>
+                                    <span>Jenkins</span>
+                                    <span>Maven</span>
+                                </div>
+                                <span class="acc-toggle-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            </div>
+                        </div>
+
+                        <!-- EXPANDABLE CONTENT -->
+                        <div class="accordion-content">
+                            <div class="video-card">
+                                <div class="video-frame">
+                                    <iframe src="https://www.youtube.com/embed/E-GZ02boYQY" title="Java Web Application Deployment" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-content">
+                                    <h3>Java Web Application Deployment on AWS</h3>
+                                    <p>Demonstration of building, packaging, containerizing, and deploying a Java web application using Docker, Jenkins, Maven, Apache Tomcat, and AWS EC2.</p>
+                                    <div class="demo-actions" style="margin-top: 20px;">
+                                        <a href="https://github.com/Purna303703/jenkins-CI-CD.git" target="_blank" class="github-acc-btn">
+                                            <i class="fa-brands fa-github"></i> View Repo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: CERTIFICATIONS -->
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">CERTIFICATIONS</span>
+                    <h2 class="section-title">Certifications & Achievements</h2>
+                </div>
+                <div class="certificate-grid">
+                    <a href="assets/certificates/DevOps.jpg" target="_blank" class="certificate-card">
+                        <img src="assets/certificates/DevOps.jpg" alt="AWS Certificate">
+                        <h3>Certified DevOps Engineer</h3>
+                    </a>
+                    <a href="assets/certificates/aws.png" target="_blank" class="certificate-card">
+                        <img src="assets/certificates/aws.png" alt="AWS">
+                        <h3>AWS Certified</h3>
+                    </a>
+                    <a href="assets/certificates/azure.jpg" target="_blank" class="certificate-card">
+                        <img src="assets/certificates/azure.jpg" alt="Azure">
+                        <h3>Microsoft Azure Fundamentals</h3>
+                    </a>
+                    <a href="assets/certificates/AWS Cloud Practitioner.jpg" target="_blank" class="certificate-card">
+                        <img src="assets/certificates/AWS Cloud Practitioner.jpg" alt="AWS Cloud Practitioner">
+                        <h3>AWS Cloud Practitioner</h3>
+                    </a>
+                    <a href="assets/certificates/cybersecurity.jpg" target="_blank" class="certificate-card">
+                        <img src="assets/certificates/cybersecurity.jpg" alt="Cybersecurity">
+                        <h3>Cybersecurity Fundamentals</h3>
+                    </a>
+                    <a href="assets/certificates/devops-security.jpg" target="_blank" class="certificate-card">
+                        <img src="assets/certificates/devops-security.jpg" alt="DevOps Security">
+                        <h3>DevOps Security</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: EDUCATION (CLEAN TWO-COLUMN LAYOUT) -->
+        <section id="education" class="academic-journey-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">EDUCATION</span>
+                    <h2 class="section-title">Academic Journey</h2>
+                </div>
+
+                <div class="academic-journey-grid">
+                    <!-- Left: Titles -->
+                    <div class="academic-journey-left">
+                        <div class="academic-level-title active" data-step="0">SSC</div>
+                        <div class="academic-level-title" data-step="1">Intermediate</div>
+                        <div class="academic-level-title" data-step="2">B.Sc Computer Science</div>
+                    </div>
+
+                    <!-- Right: Info Cards -->
+                    <div class="academic-journey-right">
+                        <!-- Card 0: SSC -->
+                        <div class="academic-detail-box active" id="edu-card-0">
+                            <span class="edu-badge">Secondary Education</span>
+                            <h3>ZP High School</h3>
+                            <h4>(Board of Secondary Education)</h4>
+                            <div class="edu-score-pill">GPA : 9.5 / 10</div>
+                            <p class="edu-meta"><i class="fa-regular fa-calendar"></i> 2020 - 2021</p>
+                            <p class="edu-meta"><i class="fa-solid fa-location-dot"></i> Dachepalle, Palnadu District, A.P., India</p>
+                        </div>
+
+                        <!-- Card 1: Intermediate -->
+                        <div class="academic-detail-box" id="edu-card-1">
+                            <span class="edu-badge">Higher Secondary (MPC)</span>
+                            <h3>Sri Vikash Junior College</h3>
+                            <h4>(Board of Intermediate Education)</h4>
+                            <div class="edu-score-pill">Score : 70.3%</div>
+                            <p class="edu-meta"><i class="fa-regular fa-calendar"></i> 2021 - 2023</p>
+                            <p class="edu-meta"><i class="fa-solid fa-location-dot"></i> Dachepalle, Palnadu District, A.P., India</p>
+                        </div>
+
+                        <!-- Card 2: Degree -->
+                        <div class="academic-detail-box" id="edu-card-2">
+                            <span class="edu-badge">Bachelor's Degree</span>
+                            <h3>K.H. & L.K. Degree College</h3>
+                            <h4>(Acharya Nagarjuna University - ANU)</h4>
+                            <div class="edu-score-pill">CGPA :7.95/10 | First Class</div>
+                            <span>Score: <strong>75.14%</strong></span>
+                            <p class="details">Major: Computer Science | Minor: Mathematics</p>
+
+                            <p class="edu-meta"><i class="fa-regular fa-calendar"></i> 2023 - 2026</p>
+                            <p class="edu-meta"><i class="fa-solid fa-location-dot"></i> Piduguralla, Palnadu District, A.P., India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LAYER 2: CONTACT & FOOTER WITH 3D GLOBE -->
+    <div class="contact-reveal-underlayer">
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">CONTACT</span>
+                    <h2 class="section-title contact-title">Let's Build Something Amazing Together</h2>
+                    <p class="contact-subtext">Have a role, a project, or just a DevOps question? My inbox is open.</p>
+                </div>
+
+                <div class="contact-interactive-wrapper">
+                    <!-- 3D WIREFRAME ROTATING GLOBE -->
+                    <div class="contact-globe-box">
+                        <div class="globe-container">
+                            <canvas id="globeCanvas"></canvas>
+                            <div class="globe-hint">Drag to rotate • Scroll to zoom</div>
+                        </div>
+                        <div class="globe-sub-badge">
+                            <i class="fa-solid fa-earth-americas"></i> Available for Remote & Global Opportunities
+                        </div>
+                    </div>
+
+                    <!-- CONTACT FORM -->
+                    <div class="contact-form-card">
+                        <div class="form-header">
+                            <div class="form-icon">
+                                <i class="fa-regular fa-comment-dots"></i>
+                            </div>
+                            <h3>Send me a message</h3>
+                        </div>
+
+                        <form action="https://formspree.io/f/mzeppjvq" method="POST" id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell me about your project or role..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="submit-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+
+                        <div class="form-quote">
+                            <p><i class="fa-solid fa-quote-left"></i> Open to new opportunities in DevOps. <i class="fa-solid fa-quote-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-grid">
+                    <a href="mailto:chandraraop698@gmail.com" class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>chandraraop698@gmail.com</p>
+                    </a>
+                    <a href="https://linkedin.com/in/s-purnachandra-rao-devops-engineer" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+                    <a href="https://github.com/Purna303703" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h3>GitHub</h3>
+                        <p>View My Projects</p>
+                    </a>
+                    <a href="assets/resume/Purna_Resume.pdf" target="_blank" class="contact-card">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <h3>Resume</h3>
+                        <p>Download Resume</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <h2>Thank You For Visiting My Portfolio 💙</h2>
+                <h3>For more contact information click my assistant 📞</h3>
+
+                <p>Designed & Developed by <strong>S. Purnachandra Rao</strong></p>
+                <div class="footer-social">
+                    <a href="https://github.com/Purna303703" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/s-purnachandra-rao-devops-engineer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:chandraraop698@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <p class="copyright">© 2026 S. Purnachandra Rao.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- SECTION: FLOATING TERMINAL ASSISTANT WIDGET -->
+    <div class="terminal-widget-container">
+        <div class="terminal-window-popup" id="terminal-popup">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-close" id="close-term-btn"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <div class="terminal-title">purna@devops-node:~ (bash)</div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <p class="term-line"><span class="term-green">purna@devops-node</span>:<span class="term-blue">~</span>$ Welcome to Purnachandra Rao's Interactive CLI!</p>
+                <p class="term-line">Type <span class="term-yellow">'help'</span> to see available commands.</p>
+                
+                <div id="terminal-output"></div>
+
+                <div class="terminal-input-line">
+                    <span class="term-green">purna@devops-node</span>:<span class="term-blue">~</span>$&nbsp;
+                    <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+                </div>
+            </div>
+        </div>
+
+        <button class="terminal-toggle-btn" id="toggle-term-btn" title="Open Assistant / Terminal">
+            <i class="fa-solid fa-headset"></i>
+        </button>
+    </div>
+
+    <!-- FULLSCREEN IMAGE PREVIEW MODAL -->
+    <div id="imageModal" class="image-modal-lightbox">
+        <span class="modal-close-btn" onclick="closeProjectModal()">&times;</span>
+        <img class="modal-lightbox-img" id="modalImg" alt="Pipeline Execution Step">
+        <div class="modal-lightbox-caption" id="modalCaption"></div>
+        <div class="modal-lightbox-controls">
+            <button onclick="prevModalSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+            <button onclick="nextModalSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
