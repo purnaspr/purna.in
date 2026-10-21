@@ -2027,3 +2027,19 @@ body.dark-theme .project-accordion-item.active .accordion-content {
         padding: 14px;
     }
 }
+
+/* Custom Skill Icon Fix for Grafana */
+.custom-skill-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-bottom: 18px;
+}
+
+.custom-skill-icon svg {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+}
