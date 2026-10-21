@@ -1986,6 +1986,7 @@ body.dark-theme .acc-tech-mini span {
     border-top: 1px solid transparent;
 }
 
+
 .project-accordion-item.active .accordion-content {
     max-height: 1200px;
     border-top: 1px solid rgba(0, 0, 0, 0.06);
