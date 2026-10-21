@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* --- E. GITHUB API REPO COUNT --- */
     const repoCountElement = document.getElementById("github-repo-count");
     if (repoCountElement) {
-        fetch(`https://api.github.com/users/Purna303703`)
+        fetch(`https://api.github.com/users/purnaspr`)
             .then(res => res.json())
             .then(data => {
                 if (data.public_repos !== undefined) repoCountElement.innerText = `${data.public_repos}+`;
@@ -400,7 +400,7 @@ function initAcademicJourneyTabs() {
 /* ==========================================================
    5. ZERO-DOWNTIME LIVE GITHUB SCREENSHOTS CONTROLLER
 ========================================================== */
-const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/Purna303703/project-1A-zero-downtime/main/";
+const GITHUB_RAW_BASE = "https://raw.githubusercontent.com/purnaspr/project-1A-zero-downtime/main/";
 
 const projectScreenshots = [
     { file: "0.png", desc: "Step 0: Spring Initializr Setup for Zero-Downtime Project" },
