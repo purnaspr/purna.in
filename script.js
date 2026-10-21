@@ -5,7 +5,7 @@ function dismissPreloader() {
     const preloader = document.getElementById("intro-preloader");
     if (preloader && !preloader.classList.contains("fade-away")) {
         preloader.classList.add("fade-away");
-        // ప్రీలోడర్ పూర్తిగా వెళ్ళిపోయిన తర్వాత మాత్రమే బ్యాక్‌గ్రౌండ్ గ్లోబ్ ప్రాసెసింగ్ స్టార్ట్ చేయాలి
+         
         setTimeout(() => {
             if (window.deferredInitGlobe) {
                 window.deferredInitGlobe();
@@ -14,7 +14,7 @@ function dismissPreloader() {
     }
 }
 
-// 1.8 సెకన్లలో ఎటువంటి లాగ్ లేకుండా క్లీన్‌గా ఓపెన్ అవుతుంది
+ 
 window.addEventListener("load", () => setTimeout(dismissPreloader, 1800));
 setTimeout(dismissPreloader, 2600);
 
@@ -704,15 +704,14 @@ function toggleProjectAccordion(itemId) {
 
     const isActive = item.classList.contains("active");
 
-    // ఒకవేళ ఒకే సమయంలో ఒకటే ఓపెన్ అయి ఉండాలి అనుకుంటే క్రింది 2 లైన్లు ఉంచండి (optional)
-    // document.querySelectorAll(".project-accordion-item").forEach(el => el.classList.remove("active"));
+     
 
     if (isActive) {
         item.classList.remove("active");
     } else {
         item.classList.add("active");
         
-        // మొదటి ప్రాజెక్ట్ ఓపెన్ అయినప్పుడు స్లైడర్ సరిగ్గా రెండర్ అవ్వడానికి
+        
         if (itemId === "proj-item-1" && typeof initProjectSliderSafe === "function") {
             setTimeout(initProjectSliderSafe, 100);
         }
