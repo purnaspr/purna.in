@@ -1186,11 +1186,29 @@ body.dark-theme .progress-bar { background: rgba(255, 255, 255, 0.08); }
     top: 100px;
 }
 
-.stack-card:nth-child(1) { z-index: 1; }
-.stack-card:nth-child(2) { z-index: 2; }
-.stack-card:nth-child(3) { z-index: 3; }
-.stack-card:nth-child(4) { z-index: 4; }
-.stack-card:nth-child(5) { z-index: 5; }
+/* ==========================================
+   DYNAMIC AUTO-STACKING CARDS (UNLIMITED PROJECTS)
+========================================== */
+.stack-container {
+    position: relative;
+    max-width: 860px;
+    width: 90%;
+    margin: 0 auto !important;
+    padding-bottom: 140px;
+}
+
+.stack-card {
+    position: sticky;
+    top: 110px;
+    width: 100%;
+    margin: 0 auto 35px auto;
+}
+
+@media (max-width: 768px) {
+    .stack-card {
+        top: 85px;
+    }
+}
 
 .stack-card-inner {
     position: relative;
