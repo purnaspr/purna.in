@@ -719,3 +719,29 @@ function toggleProjectAccordion(itemId) {
 }
 
 window.toggleProjectAccordion = toggleProjectAccordion;
+
+/* ==========================================
+   AUTO-INDEX & STACKING ENGINE FOR PROJECTS
+========================================== */
+document.addEventListener("DOMContentLoaded", () => {
+    const stackContainers = document.querySelectorAll(".stack-container");
+
+    stackContainers.forEach(container => {
+        const cards = container.querySelectorAll(".stack-card");
+        const isMobile = window.innerWidth <= 768;
+        const baseTop = isMobile ? 85 : 100;
+        const stepOffset = isMobile ? 10 : 15;
+
+        cards.forEach((card, index) => {
+            // 1. ఆటోమేటిక్‌గా z-index మరియు sticky top సెట్ చేస్తుంది
+            card.style.zIndex = index + 1;
+            card.style.top = `${baseTop + (index * stepOffset)}px`;
+
+            // 2. Projects సెక్షన్‌లోని బ్యాడ్జ్ నంబర్‌ను (1, 2, 3...) ఆటోమేటిక్‌గా అప్‌డేట్ చేస్తుంది
+            const badge = card.querySelector(".stack-badge");
+            if (badge && !badge.textContent.trim().startsWith("0")) {
+                badge.textContent = index + 1;
+            }
+        });
+    });
+});
